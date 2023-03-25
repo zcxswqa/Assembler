@@ -1,0 +1,27 @@
+.entry L1 
+L1: mov r2, r1
+	cmp MOV	, r2
+	add	r2 ,r1
+sub #-3, r4
+not r4
+		L2: 	clr		 r4
+lea		L2, r5
+inc r7
+dec 	r7		
+MAIN: clr r6 
+jmp L1(#5,r6)
+bne L2
+.extern MOV
+red	r4
+prn r4
+rts 
+STRING: .string "abc123-=()"%$|\/"^'#	anything Goes"
+DATA: .data 5, 6, -2048, 2047, -1
+jsr L2(L1,r5)
+jsr L2
+rts
+			stop
+	.data 1,2,3
+	.string "this sting has no lable\n"
+.entry L2 
+.extern L3 
