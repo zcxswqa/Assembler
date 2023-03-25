@@ -11,7 +11,7 @@
 		
 	3. Second-Pass - will produce the final output files:
     		.obj: in which the code is translated to binary
-   		.ent: in which the usage of internal lables is documented.
+		.ent: in which the usage of internal lables is documented.
   		.ext: in which the usage of external lables is documented.
 	
 	The program is split across many files each with it's own documentation.
