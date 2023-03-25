@@ -1,7 +1,5 @@
 # Assembler
-	This program will get assmebly files names (without their extentions) from
-	the command line, and translate the assembly code to 14 bits binary
-	coded words.
+	This program will translate the assembly files to 14 bits binary coded words files.
 	In order to achive this, the program is divided to three major parts:
 	
 	1. Pre-Assembler - will find and monitor any macro declarations and calls,
