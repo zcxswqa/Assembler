@@ -315,7 +315,6 @@ int validData(char *data, char *filename, int lineNumber)
 			return 0;
 		}
 		asInt = atoi(token);
-		printf("asInt: %d\n", asInt);
 		if(asInt > LARGEST_NUMBER)
 		{
 			printf("%s:#%d:	DATA ERROR: \"%s\" is greater than %d.\n", filename, lineNumber, token, LARGEST_NUMBER);
