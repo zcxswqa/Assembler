@@ -18,7 +18,8 @@
   		.ext: in which the usage of external lables is documented.
 
 
-## binary words format - |13-12|11-10|9-8-7-6|5-4|3-2|1-0|
+## binary words format
+	A word is composed of 14 bits as follows: |13-12|11-10|9-8-7-6|5-4|3-2|1-0|
 	bits 1,0 - A,R,E:
 		A = Absolute = 00, content isn't dependent on the machine code location (immidiate number, register, etc.).
 		E = External = 01, content depends on an external lable.
